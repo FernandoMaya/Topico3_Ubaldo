@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Cocoon -Portfolio">
+    <meta name="keywords" content="Cocoon , Portfolio">
+    <meta name="author" content="Pharaohlab">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>Datos Destacados</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/et-line.css" rel="stylesheet">
+    <link href="../assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="../assets/css/slick.css" rel="stylesheet">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
+
+<div class="body-container container-fluid">
+
+    <!--=================== menu Button show in small screens ====================-->
+    <a class="menu-btn" href="javascript:void(0)">
+        <i class="ion ion-grid"></i>
+    </a>
+    <!--=================== menu Button end====================-->
+
+    <div class="row justify-content-center">
+        <!--=================== side menu ====================-->
+        <div class="col-lg-2 col-md-3 col-12 menu_block">
+
+            <!--logo -->
+            <div class="logo_box">
+                <a href="#">
+                    <video autoplay muted loop id="myVideo" width="200px">
+                        <source src="../Logotipo.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </div>
+            <!--logo end-->
+
+            <!--main menu -->
+            <div class="side_menu_section">
+                <ul class="menu_nav">
+                    <li >
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about.html">
+                            Sobre Yokoi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../services.html">
+                            Datos Destacados
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../elements.html">
+                            Reglas
+                        </a>
+                    </li>
+                    <li>
+                      <a href="./Sopa/sopa.html">
+                          Sopa de Letras
+                      </a>
+                  </li>
+                    <li>
+                        <a href="../test.html">
+                            Test
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">
+                            Acerca de
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--main menu end -->
+
+            <!--social and copyright -->
+            <div class="side_menu_bottom">
+                <div class="side_menu_bottom_inner">
+                </div>
+            </div>
+            <!--social and copyright end -->
+
+        </div>
+        <!--=================== side menu end====================-->
+
+        <!--=================== content body ====================-->
+        <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
+            <div>
+<!--=================== image card start here  (has two section left and right )====================-->
+                <div class="img_card">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-7 content_section">
+                            <div class="content_box">
+                                <div class="content_box_inner">
+                                    <div class="row justify-content-center">
+<!--=================== services boxes start here  ====================-->
+                                      <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+                                      <script type="text/javascript" src="scripts/wordfind.js"></script> 
+                                      <script type="text/javascript" src="scripts/wordfindgame.js"></script> 
+                                      <div id='puzzle'></div>
+                                      <div id='words'></div>
+                                      <!-- <div><button id='solve'>Solve Puzzle</button></div> -->
+                                      <script>
+                                      var words = ['Mitos','Japón','Colombia','Proposito','Disciplina','Felicidad', 'Pasión','Integridad'];
+                                        var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+                                        $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+                                        var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+                                        wordfind.print(puzzle);
+                                      </script>
+ <!--=================== services boxes end here  ====================-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-5 img_section" style="background-image: url('assets/img/bg/truth.jpg');"></div>
+                    </div>
+                </div>
+<!--=================== image card end here ====================-->
+            </div>
+        </div>
+        <!--=================== content body end ====================-->
+    </div>
+</div>
+
+
+<!-- jquery -->
+<script src="../assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="../assets/js/popper.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="../assets/js/slick.min.js"></script>
+<!--Portfolio Filter-->
+<script src="../assets/js/imgloaded.js"></script>
+<script src="../assets/js/isotope.js"></script>
+<!-- Magnific-popup -->
+<script src="../assets/js/jquery.magnific-popup.min.js"></script>
+<!--Counter-->
+<script src="../assets/js/jquery.counterup.min.js"></script>
+<!-- WOW JS -->
+<script src="../assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="../assets/js/main.js"></script>
+<script type="text/javascript" src="scripts/wordfind.js"></script> 
+<script type="text/javascript" src="scripts/wordfindgame.js"></script>
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</body>
+</html>
